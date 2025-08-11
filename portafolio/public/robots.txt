@@ -1,0 +1,29 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Bloquea carpetas internas del build
+User-agent: *
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /assets/
+
+# Evita indexar rutas de la SPA que no sean iniciales
+Disallow: /*/static/
+Disallow: /*/*.map
+
+# Permitir acceso al resto
+Allow: /
+
+# Mapa del sitio
+#Sitemap: https://tusitio.com/sitemap.xml
+
