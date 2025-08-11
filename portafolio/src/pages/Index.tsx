@@ -13,24 +13,39 @@ import taskflowImg from "@/assets/projects/taskflow.png";
 import stockwatchImg from "@/assets/projects/stockwatch.png";
 import studyplannerImg from "@/assets/projects/study-planner.png";
 
-const skills: SkillItem[] = [
-  { name: "Python", imageSrc: "https://cdn.simpleicons.org/python/3776AB" },
-  { name: "C++", imageSrc: "https://cdn.simpleicons.org/cplusplus/00599C" },
-  { name: "React", imageSrc: "https://cdn.simpleicons.org/react/61DAFB" },
-  { name: "Tailwind CSS", imageSrc: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
-  { name: "JavaScript",imageSrc: "https://cdn.simpleicons.org/javascript/F7DF1E"},
-  { name: "Web", imageSrc: "https://cdn.simpleicons.org/html5/E34F26" },
-  { name: "PostgreSQL", imageSrc: "https://cdn.simpleicons.org/postgresql/4169E1"},
-  { name: "MySQL", imageSrc: "https://cdn.simpleicons.org/mysql/4479A1"},
-  { name: "Supabase", imageSrc: "https://cdn.simpleicons.org/supabase/3FCF8E"},
-  { name: "Git", imageSrc: "https://cdn.simpleicons.org/git/F05032" },
-  { name: "Excel", imageSrc: "https://cdn.simpleicons.org/googlesheets/34A853"},
-];
+const logoUANL = "https://upload.wikimedia.org/wikipedia/commons/9/90/Logo_de_la_UANL.svg"
+const logoUDEMY = "https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg"
+const logoCISCO = "https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg"
+
+const skills: Record<string, SkillItem[]> = {
+  Development: [
+    { name: "Python", imageSrc: "https://cdn.simpleicons.org/python/3776AB" },
+    { name: "Java", imageSrc: "https://img.icons8.com/?size=100&id=38294&format=png&color=FD7E14" },
+    { name: "JavaScript", imageSrc: "https://cdn.simpleicons.org/javascript/F7DF1E" },
+    { name: "Web", imageSrc: "https://cdn.simpleicons.org/html5/E34F26" },
+    { name: "React", imageSrc: "https://cdn.simpleicons.org/react/61DAFB" },
+    { name: "Tailwind CSS", imageSrc: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
+  ],
+  "Databases": [
+    { name: "PostgreSQL", imageSrc: "https://cdn.simpleicons.org/postgresql/4169E1" },
+    { name: "MySQL", imageSrc: "https://cdn.simpleicons.org/mysql/4479A1" },
+    { name: "Supabase", imageSrc: "https://cdn.simpleicons.org/supabase/3FCF8E" },
+  ],
+  Tools: [
+    { name: "Git", imageSrc: "https://cdn.simpleicons.org/git/F05032" },
+    { name: "Excel", imageSrc: "https://cdn.simpleicons.org/googlesheets/34A853" },
+  ],
+  "Data Analysis": [
+    { name: "Jupyter", imageSrc: "https://cdn.simpleicons.org/jupyter/F37626" },
+    // { name: "PowerBI", imageSrc: "https://cdn.simpleicons.org/bookmeter/FA7D19" },
+  ],
+};
 
 const projects: Project[] = [
   {
     title: "TaskFlow",
-    description: "A minimal task manager with drag-and-drop and offline support.",
+    description:
+      "A minimal task manager with drag-and-drop and offline support.",
     tech: ["React", "TypeScript", "IndexedDB"],
     github: "https://github.com/",
     demo: "#",
@@ -38,7 +53,8 @@ const projects: Project[] = [
   },
   {
     title: "StockWatch",
-    description: "Dashboard to visualize stock trends and alerts with Recharts.",
+    description:
+      "Dashboard to visualize stock trends and alerts with Recharts.",
     tech: ["React", "Recharts", "REST APIs"],
     github: "https://github.com/",
     demo: "#",
@@ -136,53 +152,96 @@ export default function Index() {
         {/* Sección Skills */}
         <Section
           id="skills"
-          title="Skills"
+          title="<Skills/>"
           description="Technologies and tools I use regularly."
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {skills.map((s) => (
-              <SkillBadge key={s.name} {...s} />
+          <div className="space-y-8">
+            {Object.entries(skills).map(([category, items]) => (
+              <div key={category}>
+                <h3 className="text-lg font-semibold mb-3">{category}</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                  {items.map((s) => (
+                    <SkillBadge key={s.name} {...s} />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </Section>
 
+        {/* Seccion Studies */}
         <Section
           id="studies"
-          title="Studies"
+          title="<Studies/>"
           description="Academic background and relevant courses/certifications."
         >
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-3">
+
             <div className="rounded-lg border bg-card p-6">
+              <img src={logoUANL} alt="Logo UANL" className="w-8 mb-2" loading="lazy" />
               <h3 className="text-lg font-semibold">
-                B.S. in Software Engineering
+                Software Engineering
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Your University • 2021 – Present
+                Universidad Autónoma de Nuevo León • 2021 – Present
               </p>
               <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-1">
                 <li>Data Structures & Algorithms</li>
-                <li>Databases & SQL</li>
-                <li>Web Development</li>
                 <li>Operating Systems</li>
+                <li>OOP</li>
+                <li>Software modeling</li>
+                <li>Development methodologies</li>
+                <li>Computer security</li>
+                <li>Fundamentals of IA</li>
               </ul>
             </div>
+
             <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-semibold">Certificates</h3>
-              <ul className="mt-3 list-disc pl-5 text-sm text-muted-foreground space-y-1">
-                <li>Python for Everybody</li>
-                <li>Git & GitHub Foundations</li>
-                <li>React Basics</li>
+              <img src={logoUDEMY} alt="Logo UDEMY" className="w-20 mb-2 bg-white" loading="lazy" />
+              <h3 className="text-lg font-semibold">
+                The Python Mega Course: Build 10 Real World Applications
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                33 hours
+              </p>
+              <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                <li>Fundamentals</li>
+                <li>Web Scratch</li>
+                <li>Data Analisys</li>
+                <li>OOP</li>
+                <li>GUIs</li>
+                <li>Web Apps</li>
+                <li>APIs</li>
+                <li>Flask and Django</li>
+              </ul>
+            </div>
+
+            <div className="rounded-lg border bg-card p-6">
+              <img src={logoCISCO} alt="Logo UDEMY" className="w-20 mb-2 bg-white" loading="lazy" />
+              <h3 className="text-lg font-semibold">
+                Introduction to Cybersecurity
+              </h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                6 hours
+              </p>
+              <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                <li>Cyber Best Practices</li>
+                <li>Cybersecurity</li>
+                <li>Network Vulnerabilities</li>
+                <li>Privacy and Data Confidentiality</li>
+                <li>Threat Detection</li>
               </ul>
             </div>
           </div>
         </Section>
 
+        {/* Seccion Projects */}
         <Section
           id="projects"
-          title="Projects"
+          title="<Projects/>"
           description="Selected work that highlights my interests and skills."
         >
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
             {projects.map((p) => (
               <ProjectCard key={p.title} {...p} />
             ))}
@@ -266,7 +325,7 @@ export default function Index() {
         </Section>
       </main>
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} SE Student • Built with React, Vite &
+        © {new Date().getFullYear()} • Built with React, Vite &
         Tailwind
       </footer>
     </div>
