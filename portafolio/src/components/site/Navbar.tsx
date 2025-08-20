@@ -47,7 +47,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           {/* Github link */}
           <a
-            href="#"
+            href="https://github.com/PatoDaCelt"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -58,7 +58,7 @@ export function Navbar() {
           </a>
           {/* Linkedin link */}
           <a
-            href="#"
+            href="https://www.linkedin.com/in/patriciomilgam/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
