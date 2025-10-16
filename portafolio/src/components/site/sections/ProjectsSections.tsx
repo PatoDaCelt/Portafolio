@@ -1,19 +1,19 @@
 import Section from "@/components/site/Section";
 import ProjectCard, { Project } from "@/components/site/ProjectCard";
 
-import taskflowImg from "@/assets/projects/taskflow.png";
+import AppCongresoMedicina from "@/assets/projects/AppCongresoMedicina.png";
 import stockwatchImg from "@/assets/projects/stockwatch.png";
 import studyplannerImg from "@/assets/projects/study-planner.png";
 
 const projects: Project[] = [
   {
-    title: "TaskFlow",
+    title: "WebApp 33° Congreso Nacional de Investigación e Innovación en Medicina",
     description:
-      "A minimal task manager with drag-and-drop and offline support.",
-    tech: ["React", "TypeScript", "IndexedDB"],
-    github: "https://github.com/",
-    demo: "#",
-    image: taskflowImg,
+      "Digital platform designed to facilitate event organization and participation. It allows attendees to quickly and easily view schedules, locations, and details of congress events.",
+    tech: ["React", "JavaScript", "Tailwind", "MongoDB"],
+    github: "https://github.com/rhindet/CongresoApp",
+    demo: "https://app.congresomedicinauanl.mx/",
+    image: AppCongresoMedicina,
   },
   {
     title: "StockWatch",
