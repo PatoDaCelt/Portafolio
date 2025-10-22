@@ -2,8 +2,8 @@ import Section from "@/components/site/Section";
 import ProjectCard, { Project } from "@/components/site/ProjectCard";
 
 import AppCongresoMedicina from "@/assets/projects/AppCongresoMedicina.png";
-import stockwatchImg from "@/assets/projects/stockwatch.png";
-import studyplannerImg from "@/assets/projects/study-planner.png";
+import MultimediaController from "@/assets/projects/MultimediaController.jpg";
+import FaceMaskDetection from "@/assets/projects/FaceMaskDetection.jpg";
 
 const projects: Project[] = [
   {
@@ -16,21 +16,29 @@ const projects: Project[] = [
     image: AppCongresoMedicina,
   },
   {
-    title: "StockWatch",
+    title: "Multimedia Controller v1.0.1",
     description:
-      "Dashboard to visualize stock trends and alerts with Recharts.",
-    tech: ["React", "Recharts", "REST APIs"],
-    github: "https://github.com/",
-    demo: "#",
-    image: stockwatchImg,
+      "Multimedia control using hand gesture tracking.",
+    tech: ["Python", "OpenCV", "Matplotlib"],
+    github: "https://github.com/PatoDaCelt/Controlador-Multimedia-Progra-Visual",
+    demo: "",
+    image: MultimediaController,
   },
   {
-    title: "Study Planner",
-    description: "Plan, track, and analyze study sessions with friendly UX.",
-    tech: ["React", "Zod", "React Hook Form"],
-    github: "https://github.com/",
-    demo: "#",
-    image: studyplannerImg,
+    title: "Face Mask Detector v2.0.0",
+    description: "A system that uses machine learning to predict whether the person captured by the camera is wearing a mask correctly or not. The new version integrates an Arduino control.",
+    tech: ["Python", "OpenCV", "Matplotlib", "Machine Learning", "Kaggle Dataset"],
+    github: "https://github.com/PatoDaCelt/Faces-Mask-Detection",
+    demo: "",
+    image: FaceMaskDetection,
+  },
+  {
+    title: "Face Mask Detector v2.0.0",
+    description: "A system that uses machine learning to predict whether the person captured by the camera is wearing a mask correctly or not. The new version integrates an Arduino control.",
+    tech: ["Python", "OpenCV", "Matplotlib", "Machine Learning", "Kaggle Dataset"],
+    github: "https://github.com/PatoDaCelt/Faces-Mask-Detection",
+    demo: "",
+    image: FaceMaskDetection,
   },
 ];
 
