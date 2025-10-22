@@ -4,10 +4,11 @@ import ProjectCard, { Project } from "@/components/site/ProjectCard";
 import AppCongresoMedicina from "@/assets/projects/AppCongresoMedicina.png";
 import MultimediaController from "@/assets/projects/MultimediaController.jpg";
 import FaceMaskDetection from "@/assets/projects/FaceMaskDetection.jpg";
+import SistemaParkingGecko from "@/assets/projects/SistemaParkingGecko.png";
 
 const projects: Project[] = [
   {
-    title: "WebApp 33° Congreso Nacional de Investigación e Innovación en Medicina",
+    title: "WebApp 33° Congreso Nacional de Investigación e Innovación en Medicina v1.0.0",
     description:
       "Digital platform designed to facilitate event organization and participation. It allows attendees to quickly and easily view schedules, locations, and details of congress events.",
     tech: ["React", "JavaScript", "Tailwind", "MongoDB"],
@@ -29,16 +30,16 @@ const projects: Project[] = [
     description: "A system that uses machine learning to predict whether the person captured by the camera is wearing a mask correctly or not. The new version integrates an Arduino control.",
     tech: ["Python", "OpenCV", "Matplotlib", "Machine Learning", "Kaggle Dataset"],
     github: "https://github.com/PatoDaCelt/Faces-Mask-Detection",
-    demo: "",
+    demo: "https://youtu.be/8oRnbbAYXYA",
     image: FaceMaskDetection,
   },
   {
-    title: "Face Mask Detector v2.0.0",
-    description: "A system that uses machine learning to predict whether the person captured by the camera is wearing a mask correctly or not. The new version integrates an Arduino control.",
-    tech: ["Python", "OpenCV", "Matplotlib", "Machine Learning", "Kaggle Dataset"],
-    github: "https://github.com/PatoDaCelt/Faces-Mask-Detection",
+    title: "Gecko Parking System v3.1.0",
+    description: "Parking Gecko System is an application designed to control and manage vehicle access to a parking lot. It allows you to keep track of entries and exits, generate payment amounts for users, and optimize parking space management.",
+    tech: ["Java", "NetBeans", "MySQL"],
+    github: "https://github.com/PatoDaCelt/SistemaParkingGecko",
     demo: "",
-    image: FaceMaskDetection,
+    image: SistemaParkingGecko,
   },
 ];
 
