@@ -70,7 +70,7 @@ export default function StudiesSection() {
           <h3 className="text-lg font-semibold">
             The Python Mega Course: Build 10 Real World Applications
           </h3>
-          <p className="mt-1 text-sm text-muted-foreground">33 hours</p>
+          <p className="mt-1 text-sm text-muted-foreground">6 hours</p>
           <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-1">
             <li>Fundamentals</li>
             <li>Web Scratch</li>

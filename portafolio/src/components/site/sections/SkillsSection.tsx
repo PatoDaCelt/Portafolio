@@ -6,7 +6,7 @@ const skills: Record<string, SkillItem[]> = {
     { name: "Python", imageSrc: "https://cdn.simpleicons.org/python/3776AB" },
     { name: "Java", imageSrc: "https://img.icons8.com/?size=100&id=38294&format=png&color=FD7E14" },
     { name: "JavaScript", imageSrc: "https://cdn.simpleicons.org/javascript/F7DF1E" },
-    { name: "JavaScript", imageSrc: "https://cdn.simpleicons.org/typescript" },
+    { name: "TypeScript", imageSrc: "https://cdn.simpleicons.org/typescript" },
     { name: "Web", imageSrc: "https://cdn.simpleicons.org/html5/E34F26" },
     { name: "React", imageSrc: "https://cdn.simpleicons.org/react/61DAFB" },
     { name: "Tailwind CSS", imageSrc: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
