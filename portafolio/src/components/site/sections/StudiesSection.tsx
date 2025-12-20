@@ -7,6 +7,8 @@ export default function StudiesSection() {
     "https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg";
   const logoCISCO =
     "https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg";
+  const logoSantander = 
+    "https://upload.wikimedia.org/wikipedia/commons/c/c0/Santander_Bank_Polska_S.A.svg"
 
   return (
     <Section
@@ -34,6 +36,27 @@ export default function StudiesSection() {
             <li>Development methodologies</li>
             <li>Computer security</li>
             <li>Fundamentals of IA</li>
+          </ul>
+        </div>
+
+        <div className="rounded-lg border bg-card p-6">
+          <img
+            src={logoSantander}
+            alt="Logo Santander"
+            className="w-20 mb-2 bg-white"
+            loading="lazy"
+          />
+          <h3 className="text-lg font-semibold">
+            Fundamentos y masterclass de Power BI
+          </h3>
+          <p className="mt-1 text-sm text-muted-foreground">33 hours</p>
+          <ul className="mt-4 list-disc pl-5 text-sm text-muted-foreground space-y-1">
+            <li>Power BI Basics</li>
+            <li>Data Import</li>
+            <li>Data Analisys</li>
+            <li>Report Creation</li>
+            <li>Filter Panel</li>
+            <li>Conditional Formatting</li>
           </ul>
         </div>
 

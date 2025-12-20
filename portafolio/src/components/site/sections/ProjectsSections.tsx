@@ -5,16 +5,26 @@ import AppCongresoMedicina from "@/assets/projects/AppCongresoMedicina.png";
 import MultimediaController from "@/assets/projects/MultimediaController.jpg";
 import FaceMaskDetection from "@/assets/projects/FaceMaskDetection.jpg";
 import SistemaParkingGecko from "@/assets/projects/SistemaParkingGecko.png";
+import AligatorStock from "@/assets/projects/AligatorStock.png";
 
 const projects: Project[] = [
   {
     title: "WebApp 33° Congreso Nacional de Investigación e Innovación en Medicina v1.0.0",
     description:
       "Digital platform designed to facilitate event organization and participation. It allows attendees to quickly and easily view schedules, locations, and details of congress events.",
-    tech: ["React", "JavaScript", "Tailwind", "MongoDB"],
-    github: "https://github.com/rhindet/CongresoApp",
+    tech: ["React", "JavaScript", "Vite", "Tailwind", "MongoDB"],
+    github: "https://github.com/PatoDaCelt/sistema-stock-aligator",
     demo: "https://app.congresomedicinauanl.mx/",
     image: AppCongresoMedicina,
+  },
+  {
+    title: "Aligator Stock System",
+    description:
+      "Complete system for managing products, customers,and sales, with real-time stock control, which solves the problem of a micro-enterprise by updating its inventory management system.",
+    tech: ["React", "Vite", "TypeScript", "Djago", "Python", "PostgreSQL"],
+    github: "https://github.com/rhindet/CongresoApp",
+    demo: "https://youtu.be/xlOBw2E7760",
+    image: AligatorStock,
   },
   {
     title: "Multimedia Controller v1.0.1",
