@@ -1,8 +1,9 @@
 import Navbar from "@/components/site/Navbar";
 import AboutSection from "@/components/site/sections/AboutSection";
+import ExperienceSection from "@/components/site/sections/ExperienceSection";
 import SkillsSection from "@/components/site/sections/SkillsSection";
-import StudiesSection from "@/components/site/sections/StudiesSection";
 import ProjectsSection from "@/components/site/sections/ProjectsSections";
+import StudiesSection from "@/components/site/sections/StudiesSection";
 import ContactSection from "@/components/site/sections/ContactSection";
 
 export default function Index() {
@@ -12,9 +13,10 @@ export default function Index() {
 
       <main>
         <AboutSection/>
+        <ExperienceSection/>
         <SkillsSection/>
-        <StudiesSection/>
         <ProjectsSection/>
+        <StudiesSection/>
         <ContactSection/>
       </main>
 

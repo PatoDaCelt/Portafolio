@@ -49,7 +49,7 @@ export default function ContactSection() {
   return (
     <Section
       id="contact"
-      title="Contact"
+      title="<Contact/>"
       description="Send me a message — I’m open to internships, collaborations and feedback."
     >
       <div className="grid gap-8 md:grid-cols-2">

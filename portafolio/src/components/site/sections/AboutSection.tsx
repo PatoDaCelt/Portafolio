@@ -12,7 +12,7 @@ export default function AboutSection() {
   
   return (
     <Section id="about" title="<About me/>">
-      <div className="grid gap-6 md:grid-cols-[3fr_.9fr] items-center md:my-32">
+      <div className="grid gap-6 md:grid-cols-[3fr_.9fr] items-center md:my-3">
         <div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
             Software Engineering Student
