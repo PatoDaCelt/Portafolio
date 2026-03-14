@@ -2,7 +2,7 @@ import { Rocket } from "lucide-react";
 import Section from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
 import profileImg from "@/assets/profile.png";
-import CV from "@/assets/PatricioCV.pdf"
+import CV from "@/assets/CV-PatricioMilan_Mar2026_Eng.pdf"
 
 export default function AboutSection() {
 
